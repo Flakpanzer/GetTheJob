@@ -1,0 +1,110 @@
+<?xml version= "1.0" encoding = "UTF-8" ?>
+
+<!--  Dialogo para interacción con objetos -->
+
+<!-- faces: KA1 - relaxed - KA2 - annoyed - KA3 - furious - K4 - ironic smile -->
+<ROOT>
+<Lines>
+	<LineSet conversation = "picture">
+		<Line id = "1" image = "KA1" audio = "KAPI1" text = "It's a replica of a Monet." />
+		<Line id = "2" image = "KA2" audio = "KAPI2" text = "I see you like it. Well, it’s not for sale." />
+		<Line id = "3" image = "KA2" audio = "KAPI3" text = "I told you it’s not for sale, or auction, or… anything at all really." />
+		<Line id = "4" image = "KA3" audio = "KAPI4" text = "Come on, we have to carry on with the interview. Leave the bloody picture alone." />
+		<Line id = "5" image = "KA1" audio = "KAPI5" text = "Look at that, behind the picture. There’s some sort of safe… and it has a modern digital security software. Of course I know nothing about it." />
+	</LineSet>
+	<LineSet conversation = "plant">
+		<Line id = "1" image = "KA1" audio = "KAPL1" text = "Oh, that… it’s just an Epipremnum aureum." />
+		<Line id = "2" image = "KA4" audio = "KAPL2" text = "Yeah… I know it’s called ‘potus’”, but I like ‘Epipremnum aureum’ better." />
+		<Line id = "3" image = "KA1" audio = "KAPL3" text = "Just a potus, nothing else to see here." />
+	</LineSet>
+	<LineSet conversation = "coat">
+		<Line id = "1" image = "KA2" audio = "KACO1" text = "That’s my coat." />
+		<Line id = "2" image = "KA4" audio = "KACO2" text = "I know… real leather... very expensive." />
+		<Line id = "3" image = "KA2" audio = "KACO3" text = "You’re not getting the job just by staring into my coat, mr D." />
+		<Line id = "4" image = "KA1" audio = "KACO4" text = "Come on sir… we haven’t got all day." />
+		<Line id = "5" image = "KA2" audio = "KACO5" text = "Ehm… that’s my stuff, please don’t remove anything." />
+	</LineSet>
+	<LineSet conversation = "bookshelves">
+		<Line id = "1" image = "KA1" audio = "KABO1" text = "Do you like books mr D. I read a lot myself." />
+		<Line id = "2" image = "KA1" audio = "KABO2" text = "Have you ever read ‘The process’. It’s about a man who, just like you, refuses to fall in line and follow simple indications." />
+		<Line id = "3" image = "KA2" audio = "KABO3" text = "Nothing to find here… no secret doors or any weird stuff..." />
+		<Line id = "4" image = "KA4" audio = "KABO4" text = "Oh, you found the secret door. No, just kidding, there’s no such thing in this office" />
+	</LineSet>
+	<LineSet conversation = "drawer">	
+		<Line id = "1" image = "KA1" audio = "KADR1" text = "This is where I keep all my non-important stuff." />
+		<Line id = "2" image = "KA1" audio = "KADR2" text = "Are you interested in seeing your personal files…? I’m afraid you are not allowed to do that." />
+		<Line id = "3" image = "KA2" audio = "KADR3" text = "Really mr. D, there’s nothing here that interests you" />
+		<Line id = "4" image = "KA3" audio = "KADR4" text = "Back off. This is my drawer. Besides you cannot open this without the proper key." />
+	</LineSet>	
+	<LineSet conversation = "trash">
+		<Line id = "1" image = "KA1" audio = "KATR1" text = "Nothing to see there…" />
+		<Line id = "2" image = "KA2" audio = "KATR2" text = "What could you possibly find in that bin?" />
+		<Line id = "3" image = "KA2" audio = "KATR3" text = "Don’t you put your hand in there… oh come on, that’s disgusting" />
+		<Line id = "4" image = "KA3" audio = "KATR4" text = "Stop it, come on, that’s not the kind of behavior that we expect from our soon to be employees." />
+	</LineSet>
+	<LineSet conversation = "cabinet">	
+		<Line id = "1" image = "KA1" audio = "KACA1" text = "That’s where we put the dead bodies. Please don’t open it… it just smells terrible" />
+		<Line id = "2" image = "KA1" audio = "KACA2" text = "No really, you don’t want to get any closer…" />
+		<Line id = "3" image = "KA4" audio = "KACA3" text = "It’s empty. Surprised? Come on, that’s not a proper place to store bodies. You and I know that very well." />
+	</LineSet>	
+	
+	
+<!--  Dialogo de la entrevista -->
+
+
+	<LineSet conversation = "Karl">
+		
+		<Line id = "1" image = "KA1" audio = "KAIN1" text = "Alright, let’s start the interview. First of all, why do you want to work for us?" />
+		<Line id = "2" image = "KA2" audio = "KAIN2" text = "Well… “love” is a complicated word, but who am I to judge. Next question." />
+		<Line id = "3" image = "KA3" audio = "KAIN3" text = "A game? Who said anything about a game? This is a job interview!" />
+		<Line id = "4" image = "KA2" audio = "KAIN4" text = "Well I would, but I’m working, and I suggest you start taking this seriously as well. Next Question." />
+		<Line id = "5" image = "KA1" audio = "KAIN5" text = "It says here you are an expert in funny words. Care to demonstrate?" />
+		<Line id = "6" image = "KA1" audio = "KAIN6" text = "Haha, outstanding. That was top notch funnywording." />
+		<Line id = "7" image = "KA1" audio = "KAIN7" text = "Oh… I see you’re quite serious about getting this job." />
+		<Line id = "8" image = "KA4" audio = "KAIN8" text = "Don’t worry. According to your resume, you are an expert, and resumes never lie!" />
+		<Line id = "9" image = "KA1" audio = "KAIN9" text = "Moving on, I need you to tell me one good thing about yourself, and one absolutely horrendous thing about yourself." />
+		<Line id = "10" image = "KA1" audio = "KAIN10" text = "Good, good, I like your honesty. You’re definitely trustworthy." />
+		<Line id = "11" image = "KA4" audio = "KAIN11" text = "Oh I see what you did there… something both good and horrible. Smooth mr. D." />
+		<Line id = "12" image = "KA1" audio = "KAIN12" text = "Well, the company will provide whatever you need to keep going. It’s like our motto says: “when it comes to our employees health, we just don’t give a fuck." />
+		<Line id = "13" image = "KA1" audio = "KAIN13" text = "Ok, last question and then we’ll see whether you get the job or not. I must say you’re doing very well." />
+		<Line id = "14" image = "KA1" audio = "KAIN14" text = "The question is: how do you feel right now?" />
+		<Line id = "15" image = "KA2" audio = "KAIN15" text = "Yeah, I get that a lot. Nevermind, it’s a perfectly natural reaction." />
+		<Line id = "16" image = "KA1" audio = "KAIN16" text = "With excitement, I assume. We like to believe our company stabs the competition with poisonous productivity and life-threatening products." />
+		<Line id = "17" image = "KA4" audio = "KAIN17" text = "Oh! Funny words… gwood one sir." />
+		<Line id = "18" image = "KA1" audio = "KAIN18" text = "Ok, now for our results. I have good and bad news for you mr. D." />
+		<Line id = "19" image = "KA1" audio = "KAIN19" text = "The good news is that you did very well in our interview, and you are absolutely fit to take the job we’re offering." />
+		<Line id = "20" image = "KA1" audio = "KAIN20" text = "The bad news is that we’re offering no job at all. This all has been a big set up. There’s no job, or company. Just you and me, and some silly game we both have to play." />
+		<Line id = "21" image = "KA2" audio = "KAIN21" text = "But we’re out of time and resources, and I’m way too tired to keep up with this charade." />
+		<Line id = "22" image = "KA4" audio = "KAIN22" text = "So goodbye mr. Billy. You did your best, but sometimes your best is not good enough" />
+		<Line id = "23" image = "KA2" audio = "KAIN23" text = "The bad news is… wait a minute. What are you holding there in your hands? That black box… where did you get that?" />
+		<Line id = "24" image = "KA2" audio = "KAIN24" text = "Alright, it seems that you found the Job. Yes, that black box you’re holding is the Job, and you got it without my help at all…" />
+		<Line id = "25" image = "KA1" audio = "KAIN25" text = "Well sir, I guess you’re smarter that I gave you credit for." />
+		<Line id = "26" image = "KA4" audio = "KAIN26" text = "And the only acknowledgement a smart guy like you deserves it’s a brief but rewarding “You win” sign. Congratulations, and so long mr. D. It was nice playing with you." />
+		<Line id = "27" image = "KA2" audio = "KAIN27" text = "Come on, let’s keep this interview going." />
+		<Line id = "28" image = "KA1" audio = "KAIN28" text = "CWelcome sir. Let me see… mister Billy D. I’m Karl, from Human Resources. Please, come forth so we can have our interview" />		
+								
+				
+	</LineSet>
+</Lines>	
+<Answers>
+	<AnswerSet conversation = "Karl">
+		<Answer id = "1" image = "BI1" order = "2" text = "Because I love this company." />
+		<Answer id = "2" image = "KA1" order = "3" text = "Because I have to win this game." />
+		<Answer id = "3" image = "KA1" order = "4" text = "Because GTFO." />
+		<Answer id = "4" image = "KA1" order = "6" text = "You are a big flamboyant klutz that enjoys lollygagging and pulling off weird shenanigans" />
+		<Answer id = "5" image = "KA1" order = "7" text = "Gobbledygook…" />
+		<Answer id = "6" image = "KA1" order = "8" text = "I don’t remember any…" />
+		<Answer id = "7" image = "KA1" order = "10" text = "I’m very sociable, but I have random violent psychotic outbursts." />
+		<Answer id = "8" image = "KA1" order = "11" text = "I love Lady Gaga." />
+		<Answer id = "9" image = "KA1" order = "12" text = "I am very energetic and proactive but that’s only because I take dangerous amounts of Extasis." />
+		<Answer id = "10" image = "KA1" order = "15" text = "Sexually stimulated." />
+		<Answer id = "11" image = "KA1" order = "16" text = "Intoxicated." />
+		<Answer id = "12" image = "KA1" order = "17" text = "Flabbergasted." />
+		
+	</AnswerSet>
+</Answers>	
+</ROOT>	
+	
+
+
+	
