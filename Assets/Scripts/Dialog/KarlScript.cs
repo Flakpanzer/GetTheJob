@@ -31,11 +31,16 @@ public class KarlScript : DialogScript {
 		AnswerLoader aLoader = new AnswerLoader();
 		karl = lLoader.LoadLineSet ("Karl", 1, 27);
 		billyFull = aLoader.LoadAnswerSet ("Karl", 1 ,12);
-		billyFull.CopyMultipleAnswerAtIndex(billy1, new int[] {0,1,2});
+
+        this.billy1 = new AnswerSet();
+        this.billy2 = new AnswerSet();
+        this.billy3 = new AnswerSet();
+        this.billy4 = new AnswerSet();
+
+        billyFull.CopyMultipleAnswerAtIndex(billy1, new int[] {0,1,2});
 		billyFull.CopyMultipleAnswerAtIndex(billy2, new int[] {3,4,5});
 		billyFull.CopyMultipleAnswerAtIndex(billy3, new int[] {6,7,8});
 		billyFull.CopyMultipleAnswerAtIndex(billy4, new int[] {9,10,11});
-		
 	}
 	
 	//-----
