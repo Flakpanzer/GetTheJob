@@ -7,8 +7,7 @@ using BranchEngine.UI.Elements.Dialogs;
 using BranchEngine.UI.Panels;
 using Assets.Scripts.UI.Elements.Dialogs;
 using System;
-
-
+using System.Collections.Generic;
 
 public abstract class DialogScript : MonoBehaviour
 {
@@ -157,19 +156,31 @@ public abstract class DialogScript : MonoBehaviour
         //cuando se cliquea un boton de Answer, se ejecuta DialogControl.activeScript.SetFlow(answer.order);
         //es decir que el flow del DialogScript se mueve a donde corresponda por la respuesta seleccionada
         this.answersBox.ClearOptions();
+        var handlers = new List<KeyboardManager.KeyboardEventHandler>();
+        int optionNumber = 1;
+
         foreach (var option in answerSet.setList)
         {
-            Action<Answer> createAnswer = (Answer answer) =>
+            Action<Answer, int> createAnswer = (Answer answer, int number) =>
             {
-                this.answersBox.AddOption(answer.text, () =>
+                var handler = KeyboardManager.Instance.OnKeyDown(KeyCode.Alpha0 + number, () =>
                 {
-                    Debug.Log(answer.text);
                     this.SetFlow(answer.order);
+                    KeyboardManager.Instance.Unbind(handlers);
+                });
+
+                handlers.Add(handler);
+                var answerText = string.Format("[{0}] {1}", number, answer.text);
+                this.answersBox.AddOption(answerText, () =>
+                {
+                    Debug.Log(answerText);
+                    this.SetFlow(answer.order);
+                    KeyboardManager.Instance.Unbind(handlers);
                 });
             };
 
             Debug.Log("Adding answer: " + option.text);
-            createAnswer(option);
+            createAnswer(option, optionNumber++);
         }
     }
 
@@ -180,7 +191,19 @@ public abstract class DialogScript : MonoBehaviour
         //este método cambia el botón de continuar por el de finalizar conversación.
         //al apretarse este botón hace lo mismo que el método EndConversation
         this.answersBox.ClearOptions();
-        this.answersBox.AddOption("END >>>", () => this.EndConversation());
+
+        KeyboardManager.KeyboardEventHandler handler = null;
+        handler = KeyboardManager.Instance.OnKeyDown(KeyCode.Alpha1, () =>
+        {
+            this.EndConversation();
+            KeyboardManager.Instance.Unbind(handler);
+        });
+
+        this.answersBox.AddOption("[1] END >>>", () =>
+        {
+            this.EndConversation();
+            KeyboardManager.Instance.Unbind(handler);
+        });
     }
 
     public void EndConversation()
@@ -200,6 +223,18 @@ public abstract class DialogScript : MonoBehaviour
         //el boton de continuar, si es cliqueado, hace DialogControl.activeScript.SetFlow(flow);
         //es decir que mueve el flujo de la conversación al numero dado por parámetro.
         this.answersBox.ClearOptions();
-        this.answersBox.AddOption("Continue >>>", () => this.SetFlow(flow));
+
+        KeyboardManager.KeyboardEventHandler handler = null;
+        handler = KeyboardManager.Instance.OnKeyDown(KeyCode.Alpha1, () =>
+        {
+            this.SetFlow(flow);
+            KeyboardManager.Instance.Unbind(handler);
+        });
+        
+        this.answersBox.AddOption("[1] Continue >>>", () => 
+        {
+            this.SetFlow(flow);
+            KeyboardManager.Instance.Unbind(handler);
+        });
     }
 }

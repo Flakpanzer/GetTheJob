@@ -36,24 +36,23 @@
 		<Line id = "3" image = "KA2" audio = "KADR3" text = "Really mr. D, there’s nothing here that interests you" />
 		<Line id = "4" image = "KA3" audio = "KADR4" text = "Back off. This is my drawer. Besides you cannot open this without the proper key." />
 	</LineSet>	
+  
 	<LineSet conversation = "trash">
 		<Line id = "1" image = "KA1" audio = "KATR1" text = "Nothing to see there…" />
 		<Line id = "2" image = "KA2" audio = "KATR2" text = "What could you possibly find in that bin?" />
 		<Line id = "3" image = "KA2" audio = "KATR3" text = "Don’t you put your hand in there… oh come on, that’s disgusting" />
 		<Line id = "4" image = "KA3" audio = "KATR4" text = "Stop it, come on, that’s not the kind of behavior that we expect from our soon to be employees." />
 	</LineSet>
+  
 	<LineSet conversation = "cabinet">	
 		<Line id = "1" image = "KA1" audio = "KACA1" text = "That’s where we put the dead bodies. Please don’t open it… it just smells terrible" />
 		<Line id = "2" image = "KA1" audio = "KACA2" text = "No really, you don’t want to get any closer…" />
 		<Line id = "3" image = "KA4" audio = "KACA3" text = "It’s empty. Surprised? Come on, that’s not a proper place to store bodies. You and I know that very well." />
 	</LineSet>	
 	
-	
-<!--  Dialogo de la entrevista -->
-
+  <!--  Dialogo de la entrevista -->
 
 	<LineSet conversation = "Karl">
-		
 		<Line id = "1" image = "KA1" audio = "KAIN1" text = "Alright, let’s start the interview. First of all, why do you want to work for us?" />
 		<Line id = "2" image = "KA2" audio = "KAIN2" text = "Well… “love” is a complicated word, but who am I to judge. Next question." />
 		<Line id = "3" image = "KA3" audio = "KAIN3" text = "A game? Who said anything about a game? This is a job interview!" />
@@ -82,8 +81,6 @@
 		<Line id = "26" image = "KA4" audio = "KAIN26" text = "And the only acknowledgement a smart guy like you deserves it’s a brief but rewarding “You win” sign. Congratulations, and so long mr. D. It was nice playing with you." />
 		<Line id = "27" image = "KA2" audio = "KAIN27" text = "Come on, let’s keep this interview going." />
 		<Line id = "28" image = "KA1" audio = "KAIN28" text = "CWelcome sir. Let me see… mister Billy D. I’m Karl, from Human Resources. Please, come forth so we can have our interview" />		
-								
-				
 	</LineSet>
 </Lines>	
 <Answers>
@@ -100,7 +97,6 @@
 		<Answer id = "10" image = "KA1" order = "15" text = "Sexually stimulated." />
 		<Answer id = "11" image = "KA1" order = "16" text = "Intoxicated." />
 		<Answer id = "12" image = "KA1" order = "17" text = "Flabbergasted." />
-		
 	</AnswerSet>
 </Answers>	
 </ROOT>	

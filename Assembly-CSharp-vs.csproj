@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Dialog\Line.cs" />
      <Compile Include="Assets\Scripts\Dialog\LineLoader.cs" />
      <Compile Include="Assets\Scripts\Dialog\LineSet.cs" />
+     <Compile Include="Assets\Scripts\Input\KeyboardManager.cs" />
      <Compile Include="Assets\Scripts\TriggerDialogButton.cs" />
      <Compile Include="Assets\Scripts\UI\Context\DrawingContext.cs" />
      <Compile Include="Assets\Scripts\UI\Elements\BaseContainerUIElement.cs" />

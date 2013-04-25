@@ -23,29 +23,22 @@ public class TriggerDialogButton : MonoBehaviour {
 
         active = true;
 
-        /*var menu = new VerticalMenu
-        {
-            DestroyOnSelection = true,
-            Height = 100,
-            Width = 100
-        };
+        this.InitializeDialog();
+    }
 
-        menu.AddAction("Display dialog", () => {
-            script.SetFlow(1);
-        });
-
-        UIManager.GetInstance().RegisterComponent(menu);*/
-
+    private void InitializeGrid()
+    {
         var grid = new GridFlowPanel
         {
             MaxHorizontalElements = 10,
             ElementSize = 100
         };
 
-        foreach (var i in Enumerable.Range(0, 32))
+        foreach (var i in Enumerable.Range(0, 2))
         {
             grid.AddChild(new UIButton { Caption = "Item " + i.ToString() });
         }
+        
 
         var window = new UIWindow
         {
@@ -60,4 +53,21 @@ public class TriggerDialogButton : MonoBehaviour {
 
         UIManager.GetInstance().RegisterComponent(container);
 	}
+
+    private void InitializeDialog()
+    {
+        var menu = new VerticalMenu
+        {
+            DestroyOnSelection = true,
+            Height = 100,
+            Width = 100
+        };
+
+        menu.AddAction("Display dialog", () =>
+        {
+            script.SetFlow(1);
+        });
+
+        UIManager.GetInstance().RegisterComponent(menu);
+    }
 }
