@@ -65,6 +65,8 @@
      <Compile Include="Assets\Scripts\UI\Elements\UIImage.cs" />
      <Compile Include="Assets\Scripts\UI\Elements\UILabel.cs" />
      <Compile Include="Assets\Scripts\UI\Elements\Windows\UIWindow.cs" />
+     <Compile Include="Assets\Scripts\UI\Helpers\EnumHorizontalAlignment.cs" />
+     <Compile Include="Assets\Scripts\UI\Helpers\EnumVerticalAlignment.cs" />
      <Compile Include="Assets\Scripts\UI\Panels\CenteredContainerPanel.cs" />
      <Compile Include="Assets\Scripts\UI\Panels\CustomAlignmentContainer.cs" />
      <Compile Include="Assets\Scripts\UI\Panels\GridFlowPanel.cs" />

@@ -28,19 +28,13 @@ public class KeyboardManager : MonoBehaviour
 
     public void Update()
     {
-        var unbindHandlers = new List<KeyboardEventHandler>();
-
-        foreach (var handler in this.eventHandlers)
+        var handlers = this.eventHandlers.ToList();
+        foreach (var handler in handlers)
         {
             if (handler.Handler())
             {
-                unbindHandlers.Add(handler);
+                this.eventHandlers.Remove(handler);
             }
-        }
-
-        foreach (var handler in unbindHandlers)
-        {
-            this.eventHandlers.Remove(handler);
         }
     }
 

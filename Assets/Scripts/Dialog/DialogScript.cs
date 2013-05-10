@@ -51,7 +51,7 @@ public abstract class DialogScript : MonoBehaviour
 
         this.answersBox = new DialogOptions
         {
-            Height = 200,
+            Height = 100,
             Width = 1000
         };
 
@@ -68,7 +68,7 @@ public abstract class DialogScript : MonoBehaviour
 
         this.dialogWindow.AddChild(this.dialogBox);
 
-        var dialogContainer = new CustomAlignmentContainer();
+        var dialogContainer = new CustomAlignmentContainer { VerticalAlignment = BranchEngine.UI.Helpers.EnumVerticalAlignment.Top };
         dialogContainer.AddChild(this.dialogWindow);
 
         UIManager.GetInstance().RegisterComponent(dialogContainer);
@@ -86,7 +86,7 @@ public abstract class DialogScript : MonoBehaviour
 
         this.answersWindow.AddChild(this.answersBox);
 
-        var answersContainer = new CenteredContainerPanel();
+        var answersContainer = new CustomAlignmentContainer { VerticalAlignment = BranchEngine.UI.Helpers.EnumVerticalAlignment.Bottom };
         answersContainer.AddChild(this.answersWindow);
 
         UIManager.GetInstance().RegisterComponent(answersContainer);

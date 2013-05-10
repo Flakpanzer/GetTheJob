@@ -1,6 +1,7 @@
 ﻿using BranchEngine.UI.Context;
 using BranchEngine.UI.Elements;
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -45,13 +46,11 @@ public class UIManager : MonoBehaviour
             ContainerWidth = Screen.width
         };
 
-        foreach (var element in this.activeComponents)
+        var components = this.activeComponents.ToList();
+        foreach (var element in components)
         {
             element.DrawGUI(context);
         }
-
-        this.activeComponents.RemoveAll(ue => this.drawCycleUnregisteredComponents.Contains(ue));
-        this.drawCycleUnregisteredComponents.Clear();
     }
 
     #endregion
@@ -68,6 +67,6 @@ public class UIManager : MonoBehaviour
 
     public void UnregisterComponent(BaseUIElement element)
     {
-        this.drawCycleUnregisteredComponents.Add(element);
+        this.activeComponents.Add(element);
     }
 }

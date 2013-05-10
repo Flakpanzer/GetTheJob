@@ -1,88 +1,85 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.20506</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{EB4B204B-4BA1-4EF0-8F5E-EA2BD2916B12}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>
-    </RootNamespace>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{EB4B204B-4BA1-4EF0-8F5E-EA2BD2916B12}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_3_5_6;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <NoWarn>0169</NoWarn>
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_6;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>Temp\bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <NoWarn>0169</NoWarn>
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+	<Reference Include="System" />
     <Reference Include="System.XML" />
-    <Reference Include="System.Core" />
-    <Reference Include="UnityEngine">
-      <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
-    </Reference>
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Dialog\Answer.cs" />
-    <Compile Include="Assets\Scripts\Dialog\AnswerLoader.cs" />
-    <Compile Include="Assets\Scripts\Dialog\AnswerSet.cs" />
-    <Compile Include="Assets\Scripts\Dialog\DialogControl.cs" />
-    <Compile Include="Assets\Scripts\Dialog\DialogScript.cs" />
-    <Compile Include="Assets\Scripts\Dialog\KarlScript.cs" />
-    <Compile Include="Assets\Scripts\Dialog\Line.cs" />
-    <Compile Include="Assets\Scripts\Dialog\LineLoader.cs" />
-    <Compile Include="Assets\Scripts\Dialog\LineSet.cs" />
-    <Compile Include="Assets\Scripts\Input\KeyboardManager.cs" />
-    <Compile Include="Assets\Scripts\TriggerDialogButton.cs" />
-    <Compile Include="Assets\Scripts\UI\Context\DrawingContext.cs" />
-    <Compile Include="Assets\Scripts\UI\Elements\BaseContainerUIElement.cs" />
-    <Compile Include="Assets\Scripts\UI\Elements\BaseUIElement.cs" />
-    <Compile Include="Assets\Scripts\UI\Elements\Dialogs\DialogBox.cs" />
-    <Compile Include="Assets\Scripts\UI\Elements\Dialogs\DialogOptions.cs" />
-    <Compile Include="Assets\Scripts\UI\Elements\Menus\VerticalMenu.cs" />
-    <Compile Include="Assets\Scripts\UI\Elements\UIButton.cs" />
-    <Compile Include="Assets\Scripts\UI\Elements\UIImage.cs" />
-    <Compile Include="Assets\Scripts\UI\Elements\UILabel.cs" />
-    <Compile Include="Assets\Scripts\UI\Elements\Windows\UIWindow.cs" />
-    <Compile Include="Assets\Scripts\UI\Panels\CenteredContainerPanel.cs" />
-    <Compile Include="Assets\Scripts\UI\Panels\CustomAlignmentContainer.cs" />
-    <Compile Include="Assets\Scripts\UI\Panels\GridFlowPanel.cs" />
-    <Compile Include="Assets\Scripts\UI\Panels\VerticalFlowPanel.cs" />
-    <Compile Include="Assets\Scripts\UI\UIManager.cs" />
-    <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
-    <None Include="Assets\Scripts\Dialog\GetTheJobDialog.xml" />
+     <Compile Include="Assets\Scripts\Dialog\Answer.cs" />
+     <Compile Include="Assets\Scripts\Dialog\AnswerLoader.cs" />
+     <Compile Include="Assets\Scripts\Dialog\AnswerSet.cs" />
+     <Compile Include="Assets\Scripts\Dialog\DialogControl.cs" />
+     <Compile Include="Assets\Scripts\Dialog\DialogScript.cs" />
+     <Compile Include="Assets\Scripts\Dialog\KarlScript.cs" />
+     <Compile Include="Assets\Scripts\Dialog\Line.cs" />
+     <Compile Include="Assets\Scripts\Dialog\LineLoader.cs" />
+     <Compile Include="Assets\Scripts\Dialog\LineSet.cs" />
+     <Compile Include="Assets\Scripts\Input\KeyboardManager.cs" />
+     <Compile Include="Assets\Scripts\TriggerDialogButton.cs" />
+     <Compile Include="Assets\Scripts\UI\Context\DrawingContext.cs" />
+     <Compile Include="Assets\Scripts\UI\Elements\BaseContainerUIElement.cs" />
+     <Compile Include="Assets\Scripts\UI\Elements\BaseUIElement.cs" />
+     <Compile Include="Assets\Scripts\UI\Elements\Dialogs\DialogBox.cs" />
+     <Compile Include="Assets\Scripts\UI\Elements\Dialogs\DialogOptions.cs" />
+     <Compile Include="Assets\Scripts\UI\Elements\Menus\VerticalMenu.cs" />
+     <Compile Include="Assets\Scripts\UI\Elements\UIButton.cs" />
+     <Compile Include="Assets\Scripts\UI\Elements\UIImage.cs" />
+     <Compile Include="Assets\Scripts\UI\Elements\UILabel.cs" />
+     <Compile Include="Assets\Scripts\UI\Elements\Windows\UIWindow.cs" />
+     <Compile Include="Assets\Scripts\UI\Helpers\EnumHorizontalAlignment.cs" />
+     <Compile Include="Assets\Scripts\UI\Helpers\EnumVerticalAlignment.cs" />
+     <Compile Include="Assets\Scripts\UI\Panels\CenteredContainerPanel.cs" />
+     <Compile Include="Assets\Scripts\UI\Panels\CustomAlignmentContainer.cs" />
+     <Compile Include="Assets\Scripts\UI\Panels\GridFlowPanel.cs" />
+     <Compile Include="Assets\Scripts\UI\Panels\VerticalFlowPanel.cs" />
+     <Compile Include="Assets\Scripts\UI\UIManager.cs" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Scripts\Dialog\GetTheJobDialog.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{6BD7E3F3-4CC9-48C4-2C68-EEC2BD0137F2}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
+      <Project>{6BD7E3F3-4CC9-48C4-2C68-EEC2BD0137F2}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{3EEBECBB-03D3-84F0-56EC-01444ED24D36}</Project>
-      <Name>Assembly-UnityScript-firstpass</Name>
-    </ProjectReference>
+      <Project>{3EEBECBB-03D3-84F0-56EC-01444ED24D36}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -92,4 +89,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  
 </Project>
