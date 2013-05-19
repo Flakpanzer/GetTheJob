@@ -8,7 +8,9 @@
 
         public override void DrawGUI(Context.DrawingContext context)
         {
-            GUI.Label(context.ToRect(), this.Text);
+            GUILayout.BeginArea(context.ToRect());
+            GUILayout.Label(this.Text);
+            GUILayout.EndArea();
         }
     }
 }
