@@ -1,5 +1,6 @@
 ﻿namespace BranchEngine.UI.Elements.Windows
 {
+    using System.Linq;
     using BranchEngine.UI.Context;
     using UnityEngine;
 
@@ -26,8 +27,7 @@
 
             if (this.Autosize)
             {
-                this.Width = Mathf.Max(this.Width, element.Width + this.Padding * 2);
-                this.Height = Mathf.Max(this.Height, element.Height + this.Padding + titleBarPadding);
+                this.AutosizeWindow();
             }
         }
 
@@ -37,6 +37,15 @@
             innerContext.ResetPosition(this.Padding + titleBarPadding, this.Padding);
 
             GUI.Window(this.WindowId, context.ToRect(), (windowId) => this.DrawWindowContents(innerContext), this.Title);
+        }
+
+        protected void AutosizeWindow()
+        {
+            var width = this.childElements.Max(ce => ce.Width);
+            var height = this.childElements.Max(ce => ce.Height);
+
+            this.Width = width + this.Padding * 2;
+            this.Height = height + this.Padding + titleBarPadding;
         }
 
         protected virtual void DrawWindowContents(DrawingContext context)

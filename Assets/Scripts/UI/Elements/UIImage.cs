@@ -8,7 +8,8 @@
 
         public override void DrawGUI(Context.DrawingContext context)
         {
-            GUI.DrawTexture(context.ToRect(), this.Image);
+            this.DrawArea = context.ToRect();
+            GUI.DrawTexture(this.DrawArea, this.Image);
         }
     }
 }

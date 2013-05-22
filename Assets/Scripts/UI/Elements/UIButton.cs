@@ -11,8 +11,8 @@
 
         public override void DrawGUI(DrawingContext context)
         {
-            var drawingArea = context.ToRect();
-            this.IsClicked = GUI.Button(drawingArea, this.Caption);
+            this.DrawArea = context.ToRect();
+            this.IsClicked = GUI.Button(this.DrawArea, this.Caption);
         }
     }
 }

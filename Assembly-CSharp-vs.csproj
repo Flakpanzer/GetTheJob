@@ -53,6 +53,11 @@
      <Compile Include="Assets\Scripts\Dialog\Line.cs" />
      <Compile Include="Assets\Scripts\Dialog\LineLoader.cs" />
      <Compile Include="Assets\Scripts\Dialog\LineSet.cs" />
+     <Compile Include="Assets\Scripts\Game\Inventory.cs" />
+     <Compile Include="Assets\Scripts\Game\InventoryItem.cs" />
+     <Compile Include="Assets\Scripts\Game\ItemData.cs" />
+     <Compile Include="Assets\Scripts\GameUI\UIInventoryPanel.cs" />
+     <Compile Include="Assets\Scripts\GameUI\UIInventorySlot.cs" />
      <Compile Include="Assets\Scripts\Input\KeyboardManager.cs" />
      <Compile Include="Assets\Scripts\TriggerDialogButton.cs" />
      <Compile Include="Assets\Scripts\UI\Context\DrawingContext.cs" />
@@ -67,7 +72,6 @@
      <Compile Include="Assets\Scripts\UI\Elements\Windows\UIWindow.cs" />
      <Compile Include="Assets\Scripts\UI\Helpers\EnumHorizontalAlignment.cs" />
      <Compile Include="Assets\Scripts\UI\Helpers\EnumVerticalAlignment.cs" />
-     <Compile Include="Assets\Scripts\UI\Panels\CenteredContainerPanel.cs" />
      <Compile Include="Assets\Scripts\UI\Panels\CustomAlignmentContainer.cs" />
      <Compile Include="Assets\Scripts\UI\Panels\GridFlowPanel.cs" />
      <Compile Include="Assets\Scripts\UI\Panels\VerticalFlowPanel.cs" />

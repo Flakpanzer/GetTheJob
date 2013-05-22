@@ -1,0 +1,12 @@
+C:\Projects\GetTheJob\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+C:\Projects\GetTheJob\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Projects\GetTheJob\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Projects\GetTheJob\Temp\bin\Debug\Assembly-UnityScript-firstpass.dll
+C:\Projects\GetTheJob\Temp\bin\Debug\UnityEditor.dll
+C:\Projects\GetTheJob\Temp\bin\Debug\UnityEngine.dll
+C:\Projects\GetTheJob\Temp\bin\Debug\Mono.Cecil.dll
+C:\Projects\GetTheJob\Temp\bin\Debug\nunit.framework.dll
+C:\Projects\GetTheJob\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Projects\GetTheJob\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Projects\GetTheJob\obj\Debug\Assembly-CSharp.dll
+C:\Projects\GetTheJob\obj\Debug\Assembly-CSharp.pdb

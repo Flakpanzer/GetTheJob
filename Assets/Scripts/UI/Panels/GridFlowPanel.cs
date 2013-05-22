@@ -1,4 +1,4 @@
-﻿namespace Assets.Scripts.UI.Panels
+﻿namespace BranchEngine.UI.Panels
 {
     using BranchEngine.UI.Context;
     using BranchEngine.UI.Elements;
@@ -21,17 +21,19 @@
         public override void AddChild(BaseUIElement element)
         {
             base.AddChild(element);
-
-            var optionsCount = this.childElements.Count;
-            var rows = (int)Math.Ceiling((decimal)optionsCount / MaxHorizontalElements);
-            var cols = Math.Min(this.MaxHorizontalElements, optionsCount);
-            this.UpdateWidthAndHeight(rows, cols);
+            this.UpdateWidthAndHeight();
         }
 
-        private void UpdateWidthAndHeight(int rows, int cols)
+        public override void RemoveChild(BaseUIElement element)
         {
-            this.Width = cols * this.ElementSize + (cols + 1) * this.ElementPadding;
-            this.Height = rows * this.ElementSize + (rows + 1) * this.ElementPadding;
+ 	        base.RemoveChild(element);
+            this.UpdateWidthAndHeight();
+        }
+
+        public override void ClearChilds()
+        {
+ 	        base.ClearChilds();
+            this.UpdateWidthAndHeight();
         }
 
         public override void DrawGUI(DrawingContext context)
@@ -57,6 +59,20 @@
         protected virtual void DrawChild(BaseUIElement element, DrawingContext childContext)
         {
             element.DrawGUI(childContext);
+        }
+
+        private void UpdateWidthAndHeight()
+        {
+            var optionsCount = this.childElements.Count;
+            var rows = (int)Math.Ceiling((decimal)optionsCount / MaxHorizontalElements);
+            var cols = Math.Min(this.MaxHorizontalElements, optionsCount);
+            this.UpdateWidthAndHeight(rows, cols);
+        }
+
+        private void UpdateWidthAndHeight(int rows, int cols)
+        {
+            this.Width = cols * this.ElementSize + (cols + 1) * this.ElementPadding;
+            this.Height = rows * this.ElementSize + (rows + 1) * this.ElementPadding;
         }
     }
 }

@@ -19,11 +19,21 @@ namespace BranchEngine.UI.Elements
         {
             this.childElements.Remove(element);
             element.Parent = null;
+        }
 
-            if (this.childElements.Count == 0)
+        public virtual void ClearChilds()
+        {
+            foreach(var child in childElements)
             {
-                this.Destroy();
+                child.Parent = null;
             }
+
+            this.childElements.Clear();
+        }
+
+        public override IEnumerable<BaseUIElement> GetUIElements()
+        {
+            return this.childElements.SelectMany(c => c.GetUIElements()).Concat(new [] { this });
         }
     }
 }
