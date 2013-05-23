@@ -15,7 +15,7 @@ public class TriggerDialogButton : MonoBehaviour {
     public KarlScript script;
 
     bool active = false;
-	
+		
 	// Update is called once per frame
 	void Update () {
         if (active)
@@ -24,8 +24,7 @@ public class TriggerDialogButton : MonoBehaviour {
         }
 
         active = true;
-
-        this.InitializeInventoryPanel();
+		this.InitializeDialog();
     }
 
     private void InitializeGrid()
@@ -77,13 +76,18 @@ public class TriggerDialogButton : MonoBehaviour {
 
     private void InitializeInventoryPanel()
     {
-        var uiinventory = new UIInventoryPanel();
+		var loader = new BranchEngine.RuntimeResources.ItemLoader();
+		var itemData = loader.LoadItem(5);
         var inventory = new Inventory();
-        inventory.Items = new List<InventoryItem>();
+        inventory.Items = new List<InventoryItem> { new InventoryItem { Item = itemData, Quantity = 0 } };
 
+		
+		
+		
+        var uiinventory = new UIInventoryPanel();
         uiinventory.SetupDisplay(inventory);
 
-        var container = new CustomAlignmentContainer { HorizontalAlignment = BranchEngine.UI.Helpers.EnumHorizontalAlignment.Left, VerticalAlignment = BranchEngine.UI.Helpers.EnumVerticalAlignment.Top };
+        var container = new FixedPositionContainer { Top = 200, Left = 200 };
         container.AddChild(uiinventory);
 
         UIManager.GetInstance().RegisterComponent(container);

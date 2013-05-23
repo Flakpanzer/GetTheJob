@@ -52,7 +52,7 @@ public abstract class DialogScript : MonoBehaviour
         this.answersBox = new DialogOptions
         {
             Height = 100,
-            Width = 1000
+            Width = 800
         };
 
         #endregion
@@ -68,7 +68,7 @@ public abstract class DialogScript : MonoBehaviour
 
         this.dialogWindow.AddChild(this.dialogBox);
 
-        var dialogContainer = new CustomAlignmentContainer { VerticalAlignment = BranchEngine.UI.Helpers.EnumVerticalAlignment.Top };
+        var dialogContainer = new CustomAlignmentContainer { VerticalAlignment = BranchEngine.UI.Helpers.EnumVerticalAlignment.Top, HorizontalAlignment = BranchEngine.UI.Helpers.EnumHorizontalAlignment.Left };
         dialogContainer.AddChild(this.dialogWindow);
 
         UIManager.GetInstance().RegisterComponent(dialogContainer);
@@ -86,7 +86,7 @@ public abstract class DialogScript : MonoBehaviour
 
         this.answersWindow.AddChild(this.answersBox);
 
-        var answersContainer = new CustomAlignmentContainer { VerticalAlignment = BranchEngine.UI.Helpers.EnumVerticalAlignment.Bottom };
+        var answersContainer = new CustomAlignmentContainer { VerticalAlignment = BranchEngine.UI.Helpers.EnumVerticalAlignment.Bottom, HorizontalAlignment = BranchEngine.UI.Helpers.EnumHorizontalAlignment.Right };
         answersContainer.AddChild(this.answersWindow);
 
         UIManager.GetInstance().RegisterComponent(answersContainer);

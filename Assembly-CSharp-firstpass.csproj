@@ -46,7 +46,9 @@
   <ItemGroup>
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Scripts\Data\ItemDB.xml" />
      <None Include="Assets\Scripts\Dialog\GetTheJobDialog.xml" />
+     <None Include="Assets\Scripts\Game\ItemDB.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

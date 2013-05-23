@@ -59,6 +59,8 @@
      <Compile Include="Assets\Scripts\GameUI\UIInventoryPanel.cs" />
      <Compile Include="Assets\Scripts\GameUI\UIInventorySlot.cs" />
      <Compile Include="Assets\Scripts\Input\KeyboardManager.cs" />
+     <Compile Include="Assets\Scripts\RuntimeResources\ItemLoader.cs" />
+     <Compile Include="Assets\Scripts\RuntimeResources\Loader.cs" />
      <Compile Include="Assets\Scripts\TriggerDialogButton.cs" />
      <Compile Include="Assets\Scripts\UI\Context\DrawingContext.cs" />
      <Compile Include="Assets\Scripts\UI\Elements\BaseContainerUIElement.cs" />
@@ -73,11 +75,14 @@
      <Compile Include="Assets\Scripts\UI\Helpers\EnumHorizontalAlignment.cs" />
      <Compile Include="Assets\Scripts\UI\Helpers\EnumVerticalAlignment.cs" />
      <Compile Include="Assets\Scripts\UI\Panels\CustomAlignmentContainer.cs" />
+     <Compile Include="Assets\Scripts\UI\Panels\FixedPositionContainer.cs" />
      <Compile Include="Assets\Scripts\UI\Panels\GridFlowPanel.cs" />
      <Compile Include="Assets\Scripts\UI\Panels\VerticalFlowPanel.cs" />
      <Compile Include="Assets\Scripts\UI\UIManager.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Scripts\Data\ItemDB.xml" />
      <None Include="Assets\Scripts\Dialog\GetTheJobDialog.xml" />
+     <None Include="Assets\Scripts\Game\ItemDB.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">

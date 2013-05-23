@@ -1,0 +1,10 @@
+<?xml version= "1.0" encoding = "UTF-8" ?>
+
+<ROOT>
+	<Item id = "1" name = "Black box" thumb = "ThumbBlackBox" image = "ImageBlackBox" />
+	<Item id = "2" name = "Key" thumb = "ThumbKey" image = "ImageKey" />
+	<Item id = "3" name = "Paper Scrap" thumb = "ThumbPaper" image = "ImagePaperPassword" />
+	<Item id = "4" name = "HitList" thumb = "ThumbPaper" image = "ImageBlackBox" />
+	<Item id = "5" name = "The Prozess" thumb = "ThumbBook" image = "DerProzess" />
+	<Item id = "6" name = "Black box" thumb = "ThumbBlackBox" image = "ImageBlackBox" />
+</ROOT>							

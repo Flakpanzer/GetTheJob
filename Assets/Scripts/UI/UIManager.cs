@@ -40,6 +40,9 @@ public class UIManager : MonoBehaviour
 
     void OnGUI()
     {
+		GUI.skin = (GUISkin)Resources.Load ("Skin");
+		Debug.Log(GUI.skin);
+
         var context = new DrawingContext
         {
             ContainerHeight = Screen.height,

@@ -27,7 +27,8 @@
             {
                 menu.AddAction(option.Key, option.Value);
             }
-
+			
+			menu.ElementHeight = 30;
             var menuContext = context.Project().ResizeContainerTo(this).Shrink(width: this.Height);
             menu.Width = menuContext.ContainerWidth;
             menu.DrawGUI(menuContext);

@@ -12,13 +12,13 @@
 
         public UIInventoryPanel()
         {
-            this.Columns = 10;
-            this.Rows = 6;
+            this.Columns = 3;
+            this.Rows = 3;
 
             this.Autosize = true;
             this.AddChild(grid);
 
-            this.grid.ElementSize = 100;
+            this.grid.ElementSize = 50;
         }
 
         public int Columns { get; set; }

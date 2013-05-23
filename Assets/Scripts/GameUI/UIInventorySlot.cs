@@ -11,7 +11,15 @@
         public override void DrawGUI(UI.Context.DrawingContext context)
         {
             var drawingArea = context.ToRect();
-            GUI.Box(drawingArea, "Inventory item");
+			
+			if (this.InventoryItem == null)
+			{
+            	GUI.Box(drawingArea, "No item");
+			}
+			else
+			{
+				GUI.DrawTexture(drawingArea, this.InventoryItem.Item.Thumb);	
+			}
         }
     }
 }
